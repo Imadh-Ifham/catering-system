@@ -9,6 +9,7 @@ import Home from "./Pages/Home.jsx";
 import About from "./Pages/About.jsx";
 import AdminLayout from "./UI/layouts/AdminLayout.jsx";
 import FoodManager from "./features/food/admin/pages/FoodManager.jsx";
+import Food from "./features/food/customer/pages/Food.jsx";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         {/* Customer Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/food" element={<Food />} />
 
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLayout />}>
